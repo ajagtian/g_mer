@@ -1,0 +1,17 @@
+:q
+#!/usr/bin/python3 -tt
+
+
+import sys
+
+
+def	rectify(tag_sents):
+		for tag_sent in tag_sents:
+			for tag_word in tag_sent:	
+				feature_vector = {'P_POS':'P_BS', 'PP_POS':'PP_BS', 'PPP_POS':'PPP_BS', 'N_POS':'N_ES', 'NN_POS':'NN_ES', 'NNN_POS':'NNN_ES', 'W_S':'0', 'CUR_POS':'', 'PREV':'BOS', 'NEXT':'', 'P_SF':'P_SF', 'PP_SF':'PP_SF', 'N_SF':'', 'NN_SF':'', 'P_W_S':'0', 'N_W_S':'0', 'P_POS_PP_POS':'', 'N_POS_NN_POS':''}
+				word = tag_word[0]
+				pos = tag_word[1]
+				
+							
+			
+		
